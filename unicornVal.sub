@@ -1,0 +1,15 @@
+#!/bin/bash
+#FILENAME: unicornVal.sub
+#SBATCH --output=/home/gsicilia/joboutput/unicornValFinal.out
+#SBATCH --error=/home/gsicilia/joboutput/unicornValFinal.out
+
+
+module load anaconda
+#module load cuda
+#module load cudnn
+#module load use.own
+#module load conda-env/xViewEnviro-py3.8.5
+#module load conda-env/testEnv2
+conda activate testEnv2
+python unicornVal.py
+
